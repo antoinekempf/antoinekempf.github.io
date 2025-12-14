@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #0a0a0a;    /* Noir presque pur */
-    --text-color: #e5e5e5;  /* Blanc cassé (moins agressif pour les yeux) */
-    --accent-color: #888;   /* Gris pour les éléments secondaires */
+    --bg-color: #0a0a0a;    
+    --text-color: #e5e5e5;  
+    --accent-color: #888;  
 }
 
 body {
