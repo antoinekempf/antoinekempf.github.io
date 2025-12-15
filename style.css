@@ -82,9 +82,10 @@ a:hover {
 }
 
 .education h3 {
-    margin-bottom: 4px; /* Add small space below h3 */
+    margin-bottom: 0; /* Add small space below h3 */
 }
 
 .education h4 {
     margin-top: 0; /* Ensure no space above h4 */
+    margin-bottom: 4px; /* Add space below h4 */
 }
