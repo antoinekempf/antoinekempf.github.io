@@ -33,6 +33,16 @@ h2 {
     margin-bottom: 10px;
 }
 
+h3 {
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.2rem; /* Match subtitle size */
+    color: var(--accent-color); /* Match subtitle color */
+    font-weight: 300; /* Match subtitle weight */
+}
+
 .subtitle {
     font-size: 1.2rem;
     color: var(--accent-color);
