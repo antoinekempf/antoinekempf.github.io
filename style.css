@@ -43,6 +43,7 @@ h4 {
     font-size: 1rem; 
     color: var(--accent-color); 
     font-weight: 300; 
+    margin-top: 0px;
 }
 
 .subtitle {
