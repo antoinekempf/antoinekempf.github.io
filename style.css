@@ -36,18 +36,15 @@ h2 {
 h3 {
     font-size: 1rem;
     font-weight: 300;
+    margin: 0;
 }
 
 
 h4 {
     font-size: 1rem; 
     color: var(--accent-color); 
-    font-weight: 300; 
-}
-
-h3 + h4 {
-    margin-top: 0 !important; /* Force no margin above h4 */
-    margin-bottom: 0 !important; /* Force no margin below h4 */
+    font-weight: 300;
+    margin: 0;
 }
 
 
