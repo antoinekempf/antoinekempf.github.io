@@ -83,6 +83,13 @@ h4 {
     margin: 4px 0 0 0;
 }
 
+h4-italic {
+    font-style: italic;
+    font-size: 1rem; 
+    font-weight: 400;
+    margin: 4px 0 0 0;
+}
+
 .date {
     font-size: 0.9rem;
     color: var(--accent-color);
