@@ -113,13 +113,13 @@ h4-italic {
 a {
     color: var(--text-color);
     text-decoration: none;
-    border-bottom: 1px solid var(--accent-color); 
+    border-bottom: none;
     transition: all 0.2s ease;
 }
 
 a:hover {
     color: var(--highlight-color);
-    border-bottom-color: var(--highlight-color);
+    border-bottom: none;
 }
 
 /* --- Mobile --- */
