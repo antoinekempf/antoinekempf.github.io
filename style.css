@@ -2,6 +2,7 @@
     --bg-color: #0a0a0a;    
     --text-color: #e5e5e5;  
     --accent-color: #888;  
+    --highlight-color: #fff; /* Pour les titres importants */
 }
 
 body {
@@ -14,49 +15,71 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px; /* 1200px est très large pour du texte pur, 800px est plus lisible */
     margin: 0 auto; 
-    padding: 120px 20px;
+    padding: 80px 20px; /* Réduit un peu le top padding */
 }
 
+/* --- Typography --- */
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: -1px; 
+    color: var(--highlight-color);
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Réduit un peu pour l'élégance */
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333; /* Une ligne subtile pour séparer les sections */
+    padding-bottom: 10px;
+}
+
+/* --- Entry Styling (Le changement majeur) --- */
+.entry {
+    margin-bottom: 30px; /* Espace entre les expériences */
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between; /* Pousse la date à droite */
+    align-items: baseline;
+    flex-wrap: wrap; /* Pour le mobile */
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 600; /* Plus gras pour se distinguer du lieu */
     margin: 0;
+    color: var(--highlight-color);
 }
-
 
 h4 {
     font-size: 1rem; 
     color: var(--accent-color); 
-    font-weight: 300;
-    margin: 0;
+    font-weight: 400;
+    margin: 4px 0 0 0;
 }
 
+.date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-feature-settings: "tnum"; /* Chiffres tabulaires pour bon alignement */
+}
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--accent-color);
     font-weight: 300;
     margin-top: 0;
 }
 
+/* --- Links --- */
 .links {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     gap: 20px; 
 }
@@ -65,12 +88,25 @@ a {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 1px solid var(--accent-color); 
-    padding-bottom: 2px;
     transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #fff;
-    border-bottom-color: #fff;
+    color: var(--highlight-color);
+    border-bottom-color: var(--highlight-color);
 }
 
+/* --- Mobile --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 60px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .entry-header {
+        flex-direction: column; /* Sur mobile, la date passe sous le titre */
+    }
+}
