@@ -118,7 +118,7 @@ a {
 }
 
 a:hover {
-    color: var(--highlight-color);
+    color: #0047ab;
     border-bottom: none;
 }
 
