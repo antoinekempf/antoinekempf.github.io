@@ -57,6 +57,10 @@
                     <span class="date">May 2025 —  Oct 2025</span>
                 </div>
                 <h4 class="venue">RIKEN Center for Computational Science, Kobe, Japan</h4>
+                <h4>Accelerated an implicit Finite Element solver for Navier-Stokes equations within the PETSc framework.
+                    Developed low-level optimized SpMV kernels using AVX2 vectorization and FMA instructions, delivering an 
+                    18x local speedup over standard CSR implementations. Integrated these kernels into a Newton-Krylov solver 
+                    with ILU preconditioning, reducing total simulation time by 16% on AMD EPYC and Intel Xeon architectures.</h4>
             </div>
 
             <div class="entry">
@@ -65,6 +69,11 @@
                     <span class="date">Jul 2024 —  Oct 2024</span>
                 </div>
                 <h4 class="venue">Framatome, Saint-Marcel, France</h4>
+                <h4>Optimized the ALLIANCE fatigue analysis software by migrating legacy Fortran code 
+                    to a high-performance C++ architecture using hybrid OpenMP/MPI parallelization. 
+                    Developed and mathematically proved a filtering algorithm based on Von Mises criteria,
+                    achieving a 20x speedup in Tresca stress calculations. Additionally, conducted a comparative 
+                    study on using Machine Learning (Random Forest) for mechanical stress prediction.</h4>
             </div>
         </section>
 
